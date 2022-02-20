@@ -1,0 +1,29 @@
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+class Algoritmo {
+
+
+    public static void main(String[] args) {
+        Scanner ent = new Scanner(System.in);
+        List<String> linha = new ArrayList<>();
+
+
+
+        System.out.print("Digite um número: ");
+        int Degrau = ent.nextInt();
+
+
+        for (int i = 0; i < Degrau; i++) {
+            linha.add(" ".repeat(Degrau - i) + "*".repeat(i + 1));
+        }
+
+
+        for (String d : linha){
+            System.out.println(d);
+        }
+
+    }
+
+}
